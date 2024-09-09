@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+
+  <body class="h-screen flex flex-col bg-[#f5f5f5]">
+    <div class="flex-grow mt-0 bg-[#f4f4f5]">
+      <div class="text-right pr-8 mb-4 bg-[#ef4444]">
+        <!-- Si quieren cambiar el tamaño que hay hacia abajo solo tiene que cambiarle el numeo que esta en mb-8 -->
+        <!--Si quieren cambiar el tamaño que hay  verticalmente en el titulo solo es cambiarle donde cice py-8  -->
+        <h1
+          class="text-2xl text-white font-bold py-4 relative inline-block hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:w-full hover:after:h-[2px] hover:after:bg-blue-500 hover:after:transition-transform hover:after:duration-300">
+          Titulo
+        </h1>
+      </div>
+
+      <div class="flex justify-center space-x-80 mb-10">
+        <button
+          class="bg-red-500 hover:bg-green-500 text-white font-bold py-4 px-6 rounded text-xl hover:shadow-lg transition-shadow duration-300">
+          Botón 1
+        </button>
+        <button
+          class="bg-green-500 hover:bg-red-500 text-white font-bold py-4 px-6 rounded text-xl hover:shadow-lg transition-shadow duration-300">
+          Botón 2
+        </button>
+      </div>
+
+      <!-- video y texto en la misma fila -->
+      <div class="flex space-x-4 items-start">
+        <div class="w-1/2 ">
+          <video controls class="w-full h-auto">
+            <source
+              src="video/Kiss - I Was Made For Lovin' You.mp4"
+              type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </div>
+        <div class="w-1/2 p-2">
+          <p class="text-justify leading-relaxed">
+            Hubo una época en la que la Antigua Grecia era sinónimo de esplendor
+            y sabiduría. Filósofos como Platón convivían con poetas,
+            matemáticos, astrónomos y demás eruditos, aunque nunca hubo nadie
+            mejor que él para expresar los pensamientos de su generación. Las
+            frases de Platón sobre la vida son aquellas que se centran en la
+            comprensión, el individualismo y el autoconocimiento. No es muy
+            atrevido considerar a este filósofo como a uno de los más
+            reaccionarios de este período. Sin bien es cierto que la alargada
+            sombra de Sócrates y su influencia planea aún sobre sus logros, no
+            fue algo que en su día le molestara en exceso. Debido a su imperiosa
+            necesidad por escribir todas sus ideas, hoy en día podemos acceder a
+            sus escritos, consejos y lecciones con gran facilidad. Gracias a sus
+            descubrimientos, este ateniense aficionado a la gimnasia acabó
+            convirtiéndose, junto con Aristóteles y Sócrates, en uno de los
+            filósofos más influyentes de la Antigua Grecia.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#fafaf9]">
+      <div>
+        <img
+          src="https://cdn.pixabay.com/photo/2023/09/05/20/37/owl-8235801_1280.jpg"
+          alt=""
+          class="w-[4cm] h-[4cm]" />
+      </div>
+    </footer>
+  </body>
+</html>
